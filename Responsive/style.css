@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    border: 1px solid;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "aside main";
+    height: 100vh;
+    grid-template-columns: 220px 100fr;
+}
+
+aside{
+    grid-area: aside;
+    background-color: grey;
+}
+
+main{
+    grid-area: main;
+    background-color: red;
+}
+
+h1{
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    width: 100px;
+    margin: 0px auto;
+}
+
+.botao{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+        "aside"
+        "main";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+    }
+    
+    aside{
+        background-color: blue;
+    }
+
+    h1{
+        margin: 10px auto;
+    }
+
+    p{
+        margin: 0px auto;
+    }
+    
+    .botao{
+        visibility: visible;
+        position: absolute;
+        margin-top: -63px;
+        margin-left: 5px;
+        width: 23px;
+    }
+}
