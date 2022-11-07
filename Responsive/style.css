@@ -2,7 +2,6 @@
 
 *{
     margin: 0;
-    border: 1px solid;
     font-family: 'Poppins',sans-serif;
 }
 
@@ -15,31 +14,46 @@ body{
 
 aside{
     grid-area: aside;
-    background-color: grey;
+    background-color: rgb(19, 18, 18);
 }
 
 main{
     grid-area: main;
-    background-color: red;
+    background-color: rgb(219, 219, 219);
 }
 
 h1{
     margin: 20px auto;
     width: 200px;
     text-align: center;
+    color: #7f00b2;
 }
 
-p{
+#inf{
     text-align: center;
     width: 100px;
     margin: 0px auto;
+    color: #7f00b2;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+.navbar{
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    margin: 10px auto;
+    color: #7f00b2;
 }
 
 .botao{
     visibility: hidden;
+    display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     body{
         display: grid;
         grid-template-areas: 
@@ -50,7 +64,7 @@ p{
     }
     
     aside{
-        background-color: blue;
+        background-color: rgb(19, 18, 18);
     }
 
     h1{
@@ -62,10 +76,12 @@ p{
     }
     
     .botao{
+        display: block;
         visibility: visible;
         position: absolute;
         margin-top: -63px;
         margin-left: 5px;
         width: 23px;
+        cursor: pointer;
     }
 }
