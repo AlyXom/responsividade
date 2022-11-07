@@ -84,4 +84,13 @@ nav{
         width: 23px;
         cursor: pointer;
     }
+
+    nav{
+        position: absolute;
+        border: 1px solid #7f00b2;
+        background-color: rgb(19, 18, 18);
+        margin-top: -63px;
+        margin-left: -102px;
+        visibility: hidden;
+    }
 }
