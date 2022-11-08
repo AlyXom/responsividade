@@ -24,6 +24,18 @@ main{
     overflow-y: scroll;
 }
 
+main::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 20px;
+    background: black;
+}
+
+
+main::-webkit-scrollbar-thumb{
+    background: #7f00b2;
+    border-radius: 20px;
+}
+
 h1{
     margin: 20px auto;
     width: 200px;
@@ -62,6 +74,11 @@ a{
 }
 
 .botao{
+    visibility: hidden;
+    display: none;
+}
+
+#cross{
     visibility: hidden;
     display: none;
 }
@@ -116,6 +133,20 @@ a{
 
     .botao:hover{
         transition: .3s;
+        transform: scale(1.1);
+    }
+
+    #cross{
+        display: block;
+        visibility: visible;
+        width: 23px;
+        margin-top: 5px;
+        margin-left: 70px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    #cross:hover{
         transform: scale(1.1);
     }
 
